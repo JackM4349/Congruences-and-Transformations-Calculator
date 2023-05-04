@@ -1,0 +1,4 @@
+You can build it with the python file, or build it with the html file.
+
+However, this is only a demo because we haven't tested the python build, plus, it
+doesn't name it "CATC-FB-64" (That means congruences and transformations calculator full build 64 (as in windows 64))

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Congruence, Transformations, and Rotations Calculator</title>
+    <style>
+      /* CSS code goes here */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      /* Add more styles as needed */
+    </style>
+  </head>
+  <body>
+    <!-- HTML code goes here -->
+    <h1>Congruence, Transformations, and Rotations Calculator</h1>
+    <div id="input">
+      <!-- Add input fields and buttons here -->
+      <label for="side1">Side 1:</label>
+      <input type="number" id="side1" name="side1">
+      <br>
+      <label for="side2">Side 2:</label>
+      <input type="number" id="side2" name="side2">
+      <br>
+      <label for="angle">Angle:</label>
+      <input type="number" id="angle" name="angle">
+      <br>
+      <button id="calculate" onclick="calculate()">Calculate</button>
+      <button id="reset" onclick="reset()">Reset</button>
+    </div>
+    <div id="output">
+      <!-- Add output fields and text here -->
+      <p id="result"></p>
+    </div>
+    <!-- JavaScript code goes here -->
+    <script>
+      function calculate() {
+        // Add calculation logic here
+        var side1 = parseFloat(document.getElementById("side1").value);
+        var side2 = parseFloat(document.getElementById("side2").value);
+        var angle = parseFloat(document.getElementById("angle").value);
+        var result = document.getElementById("result");
+        // Add more calculation logic as needed
+        result.innerHTML = "Result: " + (side1 + side2 + angle);
+      }
+      function reset() {
+        // Add reset logic here
+        document.getElementById("side1").value = "";
+        document.getElementById("side2").value = "";
+        document.getElementById("angle").value = "";
+        document.getElementById("result").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>
